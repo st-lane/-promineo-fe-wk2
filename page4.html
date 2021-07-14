@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE Tech: Week 2 - A Form</title>
+    <link rel="stylesheet" href="week2.css" type="text/css">
+    <script type="text/javascript" src="i-want-a-server.js"></script>
+</head>
+<body>
+    <nav></nav>
+    <main>
+        <h2>A form, without script or a server, is uninformed.</h2>
+        
+        <h3>Search www.uhc.com for:</h3>
+        <p><strong>Notes:</strong>
+        <ul>
+            <li>Submitting this form opens a new tab.  Close the tab to return here.</li>
+            <li>There is no validation on this form - Garbage In, Garbage Out applies in full.</li>
+        </ul> 
+        </p>
+
+        <form action="https://www.uhc.com/searchresult" method="GET" target="_new">
+        <label><strong>Search term</strong></label>
+        <input type="text" name="q" placeholder="A search term or string">
+        <label><strong>Sort by</strong></label>
+        <select name="sort">
+            <option value="">Relevance</option>
+            <option value="last_modified_d+desc">Date (newest first)</option>
+        </select><br><br>
+        <input type="submit" value="Search">
+        </form>
+    </main>
+</body>
+</html>
